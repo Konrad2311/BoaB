@@ -1,13 +1,12 @@
 /* Text font */
-
 @font-face {
     font-family: 'Akrobat';
     src: url("../fonts/Akrobat-Regular.otf");
 }
 
+/* Headings font */
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400');
 
-/* Headings font */
 
 html {
     font-size: 100%;
