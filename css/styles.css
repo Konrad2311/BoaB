@@ -1,1 +1,52 @@
-/* Main styles file */
+/* Text font */
+
+@font-face {
+    font-family: 'Akrobat';
+    src: url("../fonts/Akrobat-Regular.otf");
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+
+/* Headings font */
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Akrobat', 'Lato', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* Header block */
+
+
+/* Description block */
+
+
+/* History block */
+
+
+/* Price calculation block */
+
+
+/* Examples block */
+
+
+/* Contact form */
