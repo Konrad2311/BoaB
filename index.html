@@ -8,13 +8,15 @@
     <meta name="keywords" content="Brand on a Block">
     <meta name="author" content="Vladislavs, Florian, Konrad und Eric">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <!-- Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Icons -->
+    <script src="https://use.fontawesome.com/adc08617a9.js"></script>
+
+
     <title>
         Brand on a Block
     </title>
@@ -22,34 +24,78 @@
 
 <body>
 
-    <!-- TODO: Header block (Vlad) -->
-    <div class="header-block">
+    <!-- TODO: MENU -->
+    <div class="header-menu">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a href="#header-block"><img src="images/boab-logo_white.png" alt="Logo" class="header-menu__logo"></a>
+                        </div>
 
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right header-menu__buttons">
+                                <li><a href="#description-block">Über uns</a></li>
+                                <li><a href="#price_calculation-block">Preise berechnen</a></li>
+                                <li><a href="#examples-block">Beispiele</a></li>
+                                <li><a href="#contact_form-block">Kontakt</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- TODO: Header block (Vlad) -->
+    <div id="header-block" class="header-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12 header-block__slogan">
+                    <h1>
+                        Think outside the box. <br>
+                        <span class="header-block__slogan_yellow-text">Be the box.</span>
+                    </h1>
+                </div>
+
+            </div>
+        </div>
     </div>
 
 
     <!-- TODO: Description part (Konrad) -->
-    <div class="description-block">
+    <div id="description-block" class="description-block">
 
     </div>
 
 
     <!-- TODO: Description/History part (Konrad) -->
-    <div class="history-block">
+    <div id="history-block" class="history-block">
 
     </div>
 
 
     <!-- TODO: Price calculation part (Vlad) -->
-    <div class="price_calculation-block">
+    <div id="price_calculation-block" class="price_calculation-block">
 
     </div>
 
 
     <!-- TODO: Examples part (Florian) -->
-    <div class="examples-block">
+    <div id="examples-block" class="examples-block">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    
+
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -58,7 +104,7 @@
                 <li data-target="#myCarousel" data-slide-to="4"></li>
             </ol>
 
-    
+
             <div class="carousel-inner">
                 <div class="item active">
                     <img src="http://fotografie4flensburg.files.wordpress.com/2012/03/team_express_plane_r_1500.jpg" style="width:100%; height: 900px">
@@ -66,43 +112,50 @@
 
                 <div class="item">
                     <img src="http://www.moving-poster.co.uk/uploads/tx_mwpalbgslider/PAL_Website_HGBilder_Pal24_01.jpg" alt="Branding 1" style="width:100%; height: 900px">
-                </div> 
-        
+                </div>
+
                 <div class="item">
                     <img src="http://www.gillard-sas.fr/produits_content/images/76.jpg" alt="Branding 2" style="width:100%; height: 900px">
                 </div>
-    
+
                 <div class="item">
                     <img src="http://mierke-werbung.de/wp-content/uploads/2016/06/vilsa_planen_banner_mierke_werbung.jpg?x82833" alt="Branding 1" style="width:100%; height: 900px">
-                </div>    
-        
+                </div>
+
                 <div class="item">
                     <img src="https://www.trenddesign-team.de/files/aklas.jpg" alt="Branding 2" style="width:100%; height: 900px">
                 </div>
-      
-           </div>
 
-    
-           <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-           <span class="glyphicon glyphicon-chevron-left"></span>
-           <span class="sr-only">Previous</span>
-           </a>
-           <a class="right carousel-control" href="#myCarousel" data-slide="next">
-           <span class="glyphicon glyphicon-chevron-right"></span>
-           <span class="sr-only">Next</span>
-           </a>
-         </div>
+            </div>
+
+
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
     </div>
 
 
     <!-- TODO: Contact form (Eric) -->
-    <div class="contact_form-block">
+    <div id="contact_form-block" class="contact_form-block">
 
     </div>
 
 
+    <!-- Back to top -->
+    <div class="back-top">
+        <i class="fa fa-angle-up"></i>
+    </div>
+
     <!-- Scripts -->
+    <script src="js/jquery-2.1.4.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/viewportchecker.js"></script>
     <script src="js/custom.js"></script>
 </body>
 

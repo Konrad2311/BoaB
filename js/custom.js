@@ -21,7 +21,6 @@ jQuery(function() {
 });
 
 
-
 // Menu adjustments by scroll
 $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
@@ -29,4 +28,14 @@ $(window).scroll(function() {
     } else {
         $('.header-menu').removeClass("header-menu_sticky");
     }
+});
+
+// Nice jump to sections
+$(document).ready(function() {
+    $('a[href^="#"]').on("click", function(event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({ scrollTop: top }, 1500);
+    });
 });
