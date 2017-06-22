@@ -34,7 +34,9 @@ p {
 }
 
 a {
-    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out none;
+    -moz-transition: all 0.2s ease-in-out none;
+    transition: all 0.2s ease-in-out none;
 }
 
 
@@ -52,7 +54,7 @@ a {
     color: #fff;
     height: auto;
     width: auto;
-    z-index: 5;
+    z-index: 999;
     transition: all 0.3s ease 0s;
 }
 
@@ -69,7 +71,9 @@ a {
     width: 100%;
     display: block;
     padding-top: 50px;
-    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out none;
+    -moz-transition: all 0.2s ease-in-out none;
+    transition: all 0.2s ease-in-out none;
     z-index: 2;
 }
 
@@ -162,6 +166,43 @@ a {
 
 
 /* Price calculation block */
+
+.price_calculation-block {
+    padding-bottom: 90px;
+}
+
+.price_calculation-block__heading {
+    margin-top: 70px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.95)
+}
+
+.price_calculation-block-calculator {
+    margin-top: 60px;
+}
+
+.price_calculation-block-calculator__btn {
+    width: 100%;
+}
+
+.price_calculation-block-summary {
+    margin-top: 25px;
+}
+
+.price_calculation-block-summary__heading {
+    text-align: center;
+}
+
+.price_calculation-block-summary__result {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.price_calculation-block-summary__btn {
+    width: 100%;
+    margin-top: 30px;
+}
 
 
 /* Examples block */
