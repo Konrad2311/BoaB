@@ -11,15 +11,13 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
     <link rel="stylesheet" href="css/styles.css">
 
     <!-- Icons -->
     <script src="https://use.fontawesome.com/adc08617a9.js"></script>
 
-
-    <title>
-        Brand on a Block
-    </title>
+    <title> Brand on a Block</title>
 </head>
 
 <body>
@@ -88,7 +86,58 @@
 
     <!-- TODO: Price calculation part (Vlad) -->
     <div id="price_calculation-block" class="price_calculation-block">
+        <div class="container">
+            <div class="row price_calculation-block__heading">
+                <h1>Berechnen sie ihren preis</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 price_calculation-block-calculator">
+                    <form>
+                        <div class="form-group">
+                            <label class="sr-only" for="zone">Zone</label>
+                            <select type="text" class="form-control" id="zone" required>
+                                <option value="Europa">Europa</option>
+                                <option value="Russland">Russland</option>
+                                <option value="Amerika">Amerika</option>
+                                <option value="Australia">Australia</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <label class="sr-only" for="datepicker-start">Anfang</label>
+                                    <input type="date" class="form-control" id="datepicker-start" placeholder="Ab" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <label class="sr-only" for="datepicker-end">Ende</label>
+                                    <input type="date" class="form-control" id="datepicker-end" placeholder="Bis" required>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="form-group">
+                            <label class="sr-only" for="quantity">Die Anzahl der Autos</label>
+                            <input type="number" class="form-control" min="1" max="50" id="quantity" placeholder="Die Anzahl der Autos" required>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="col-md-6 col-sm-6 col-xs-12 price_calculation-block-summary">
+                    <h2 class="price_calculation-block-summary__heading">Ergebnis</h2>
+                    <h2 class="price_calculation-block-summary__result">0</h2>
+
+                    <div class="row">
+                        <div class="col-md-8 col-sm-12-col-xs-12 col-md-offset-2">
+                            <a href="#contact_form-block" class="btn btn-primary price_calculation-block-summary__btn">Kontaktieren Sie uns</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 
 
@@ -156,6 +205,8 @@
     <script src="js/jquery-2.1.4.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/viewportchecker.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.18.1/moment.min.js"></script>
     <script src="js/custom.js"></script>
 </body>
 
