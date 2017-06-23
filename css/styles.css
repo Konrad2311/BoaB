@@ -209,24 +209,31 @@ a {
 
 
 /* Contact form */
-input:invalid{
-	border-color: red;
-	color: red;
-}
-textarea:invalid{
-	border-color: red;
-	color: red;
-}
+
+
 /* If required fields are not filled, the border-color stays red */
-label {
-	font-family: Akrobat;
+
+input:invalid {
+    border-color: red;
+    color: red;
 }
+
+textarea:invalid {
+    border-color: red;
+    color: red;
+}
+
+
 /* Font Ihre Nachricht */
-	
-span{ 
-font-family: Akrobat;
+
+label {
+    font-family: 'Akrobat';
 }
-/* Senden Sie uns ihre Nachricht! Font */
+
+span {
+    font-family: 'Akrobat';
+}
+
 
 /* RESPONSIVE */
 
