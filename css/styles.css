@@ -211,27 +211,31 @@ a {
 /* Contact form */
 
 
+input:invalid{
+	border-color: red;
+	color: red;
+	border-style: solid;
+}
+textarea:invalid{
+	border-color: red;
+	color: red;
+	border-style: solid;
+}
 /* If required fields are not filled, the border-color stays red */
-
-input:invalid {
-    border-color: red;
-    color: red;
-}
-
-textarea:invalid {
-    border-color: red;
-    color: red;
-}
-
-
-/* Font Ihre Nachricht */
-
 label {
-    font-family: 'Akrobat';
+	font-family: Akrobat-Light;
 }
-
-span {
-    font-family: 'Akrobat';
+/* Font Ihre Nachricht */
+div{
+margin-top: 15px;
+}	
+h1{ 
+font-family: Akrobat-Light;
+margin-top: 60px;
+text-align:center;
+}
+iframe{
+margin-top: 60px;
 }
 
 
