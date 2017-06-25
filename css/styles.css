@@ -159,10 +159,39 @@ a {
 }
 
 
+
 /* Description block */
+
+.description_heading{
+	margin-right: 100px;
+margin-left: 100px;
+margin-top:70px;
+margin-bottom: 70px;
+}
+
+
+.description-block{
+
+	
+margin-right: 100px;
+margin-left: 100px;
+
+}
+
 
 
 /* History block */
+.history_heading{
+	margin-right: 100px;
+margin-left: 100px;
+margin-top:70px;
+margin-bottom: 70px;
+}
+
+.history-block{
+	
+margin-right: 100px;
+margin-left: 100px;
 
 
 /* Price calculation block */
