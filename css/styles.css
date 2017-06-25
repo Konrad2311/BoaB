@@ -222,19 +222,26 @@ textarea:invalid{
 	border-style: solid;
 }
 /* If required fields are not filled, the border-color stays red */
-label {
-	font-family: Akrobat-Light;
-}
-/* Font Ihre Nachricht */
-div{
+.contact_form-block_Name {
 margin-top: 15px;
-}	
-h1{ 
-font-family: Akrobat-Light;
+}
+.contact_form-block_Telefon{
+margin-top: 15px;
+}
+.contact_form-block_EMail {
+margin-top: 15px;
+}
+.contact_form-block_Betreff{
+margin-top: 15px;
+}
+.contact_form-block_Nachricht {
+margin-top: 15px;
+}
+.contact_form-block_heading { 
 margin-top: 60px;
 text-align:center;
 }
-iframe{
+.contact_form-block_googlemaps {
 margin-top: 60px;
 }
 
